@@ -6,7 +6,7 @@ package findmaxandmin;
 import java.util.Random;
 
 /*
- * The program is creates to find the largest and smallest number in an array
+ * The program was created to find the largest and smallest number in an array
  */
 
 public class findmaxandmin {
