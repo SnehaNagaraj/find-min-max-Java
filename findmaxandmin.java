@@ -12,7 +12,7 @@ import java.util.Random;
 public class findmaxandmin {
 
 	public static void main(String[] args) {
-				int[] anarray;
+		int[] anarray;
 		int index, size;
 		
 		Random random_number = new Random();
