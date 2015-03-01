@@ -12,16 +12,18 @@ import java.util.Random;
 public class findmaxandmin {
 
 	public static void main(String[] args) {
+		
 		int[] anarray;
 		int index, size;
 		
 		Random random_number = new Random();
 		Random random_length = new Random();
 		
-		size = random_length.nextInt(10) + 1;
-		anarray = new int[size];
+		size = random_length.nextInt(10) + 1; // at least one element array
+		anarray = new int[size]; // random size
 		
 		
+		// To print the index and value of the array
 		for(index = 0; index < anarray.length ; index++) {
 			anarray[index] = random_number.nextInt(100);
 			System.out.println("Index " + index + " Value " + anarray[index]);
