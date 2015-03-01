@@ -20,7 +20,7 @@ public class findmaxandmin {
 		Random random_length = new Random();
 		
 		size = random_length.nextInt(10) + 1; // at least size will equal 1
-		anarray = new int[size]; // random size
+		anarray = new int[size]; // anarray variable will be an array with a random size
 		
 		
 		// To print the index and value of the array
