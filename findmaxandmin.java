@@ -12,24 +12,26 @@ import java.util.Random;
 public class findmaxandmin {
 
 	public static void main(String[] args) {
-				
-		int[] anarray;
+				int[] anarray;
+		int index, size;
 		
-		Random rand = new Random();
-		anarray = new int[5];
+		Random random_number = new Random();
+		Random random_length = new Random();
 		
-	 	for (int index = 0; index < 5; index++) {
-			
-			anarray[index] = rand.nextInt(100);
-			
+		size = random_length.nextInt(10) + 1;
+		anarray = new int[size];
+		
+		
+		for(index = 0; index < anarray.length ; index++) {
+			anarray[index] = random_number.nextInt(100);
 			System.out.println("Index " + index + " Value " + anarray[index]);
 		}
-
+		
 		int largest_value = anarray[0];
 		int smallest_value = anarray[0];
 		
 		//Loop to find the largest and smallest number
-		for (int index = 0; index < 5; index++) {
+		for (index = 0; index < anarray.length; index++) {
 			
 			// condition to find the largest number
 			if (largest_value < anarray[index]) {
@@ -46,6 +48,7 @@ public class findmaxandmin {
 		System.out.println();
 		System.out.println("The biggest value is " + largest_value);
 		System.out.println("The samllest value is " + smallest_value);
+		
 		
 	}
 
