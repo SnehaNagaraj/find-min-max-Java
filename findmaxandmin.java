@@ -31,6 +31,7 @@ public class findmaxandmin {
 		
 		int largest_value = anarray[0];
 		int smallest_value = anarray[0];
+		int average = anarray[0];
 		
 		//Loop to find the largest and smallest number
 		for (index = 0; index < anarray.length; index++) {
@@ -47,9 +48,11 @@ public class findmaxandmin {
 			
 		}
  		
+		average = (largest_value + samllest_value)/2;
 		System.out.println();
 		System.out.println("The biggest value is " + largest_value);
 		System.out.println("The samllest value is " + smallest_value);
+		System.out.println("The average value is " + avergae);
 		
 		
 	}
